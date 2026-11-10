@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EMS Solutions | SanShina Electronic Products</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Header & Navigation -->
+  <header class="bg-blue-900 text-white shadow-lg sticky top-0 z-40">
+    <div class="container mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center">
+      <div class="flex items-center mb-4 md:mb-0 max-w-full">
+        <!-- Main Company Logo -->
+        <img id="main-company-logo" src="logos/sanshina.webp" onerror="tryNextFormat(this)" alt="SanShina" class="h-12 md:h-14 mr-4 bg-white rounded p-1 object-contain flex-shrink-0">
+        <div class="overflow-hidden">
+          <h1 class="text-lg md:text-xl font-bold tracking-tight truncate">SanShina Electronic Products and Services Pvt. Ltd.</h1>
+          <p class="text-xs text-blue-200">B2B Industrial Portal | Hyderabad, India</p>
+        </div>
+      </div>
+      <nav class="flex space-x-1 md:space-x-2 overflow-x-auto w-full md:w-auto pb-2 md:pb-0 items-center">
+        <a href="index.html" class="px-3 py-2 rounded hover:bg-blue-800 text-sm font-semibold whitespace-nowrap transition-colors">Home</a>
+        <a href="components.html" class="px-3 py-2 rounded hover:bg-blue-800 text-sm font-semibold whitespace-nowrap transition-colors">Component Distribution</a>
+        <a href="ems.html" class="px-3 py-2 rounded bg-blue-800 text-sm font-semibold whitespace-nowrap transition-colors">EMS Solutions</a>
+        <a href="techlabs.html" class="px-3 py-2 rounded hover:bg-blue-800 text-sm font-semibold whitespace-nowrap transition-colors">Technical Labs</a>
+        <a href="about.html" class="px-3 py-2 rounded hover:bg-blue-800 text-sm font-semibold whitespace-nowrap transition-colors">About Us</a>
+        
+        <!-- Global RFQ Button -->
+        <button onclick="openRFQModal()" class="ml-2 px-4 py-2 rounded bg-orange-600 hover:bg-orange-500 text-white text-sm font-bold whitespace-nowrap transition-colors shadow-md">Submit RFQ</button>
+      </nav>
+    </div>
+  </header>
+  
+  <main>
+    
+    <div class="bg-black text-white">
+      <!-- 1. Hero / Problem Section -->
+      <section class="relative py-24 bg-[url('gifs/ems-problem.gif')] bg-cover bg-center bg-fixed border-b border-gray-800">
+        <div class="absolute inset-0 bg-black bg-opacity-70"></div>
+        <div class="relative z-10 max-w-4xl mx-auto px-4 text-center">
+          <h2 class="text-4xl md:text-5xl font-bold mb-6 ems-text-glow text-blue-400">Building a hardware product is hard enough without the manufacturing puzzle</h2>
+          <p class="text-xl ems-text-glow text-gray-200 mb-8">
+            You designed it. Now you need it built reliably, at scale, and locally. Operating entirely out of Hyderabad, India, our NPI and production lines bridge the gap between your CAD files and a physical, tested product ready for the market.
+          </p>
+        </div>
+      </section>
+
+      <!-- 2. Capabilities Section -->
+      <section class="relative py-20 bg-[url('gifs/ems-capabilities.gif')] bg-cover bg-center bg-fixed border-b border-gray-800">
+        <div class="absolute inset-0 bg-gray-900 bg-opacity-80"></div>
+        <div class="relative z-10 container mx-auto px-4">
+          <div class="text-center mb-16">
+            <h3 class="text-3xl md:text-4xl font-bold text-white ems-text-glow">What our production line can build</h3>
+            <p class="text-gray-300 mt-4 max-w-2xl mx-auto ems-text-glow">From rapid prototyping to mass production, our Hyderabad facility handles complex assemblies.</p>
+          </div>
+          <div class="grid md:grid-cols-3 gap-8">
+            <div class="p-8 border border-gray-600 rounded-lg bg-black bg-opacity-40 backdrop-blur-sm">
+              <h4 class="text-xl font-bold text-blue-400 mb-4 ems-text-glow">PCBA (SMT & THT)</h4>
+              <p class="text-gray-200 ems-text-glow">High-precision Surface Mount and Through-Hole assembly. Handling passives down to 0201, BGA, and fine-pitch components with automated optical inspection.</p>
+            </div>
+            <div class="p-8 border border-gray-600 rounded-lg bg-black bg-opacity-40 backdrop-blur-sm">
+              <h4 class="text-xl font-bold text-blue-400 mb-4 ems-text-glow">Box Build & Integration</h4>
+              <p class="text-gray-200 ems-text-glow">Complete mechanical assembly, integrating PCBs into enclosures, routing cables, and applying custom firmware prior to final packaging.</p>
+            </div>
+            <div class="p-8 border border-gray-600 rounded-lg bg-black bg-opacity-40 backdrop-blur-sm">
+              <h4 class="text-xl font-bold text-blue-400 mb-4 ems-text-glow">Cable & Wire Harness</h4>
+              <p class="text-gray-200 ems-text-glow">Custom cable assemblies, overmolding, and wire harnesses designed to withstand harsh industrial environments.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. NPI Process Section -->
+      <section class="relative py-20 bg-[url('gifs/ems-process.gif')] bg-cover bg-center bg-fixed border-b border-gray-800">
+        <div class="absolute inset-0 bg-blue-900 bg-opacity-80"></div>
+        <div class="relative z-10 container mx-auto px-4">
+          <div class="text-center mb-16">
+            <p class="text-blue-300 font-bold tracking-widest uppercase ems-text-glow">Our NPI Process</p>
+            <h3 class="text-3xl md:text-4xl font-bold text-white mt-2 ems-text-glow">How we turn your design files into a manufactured product</h3>
+            <p class="text-gray-200 mt-4 max-w-2xl mx-auto ems-text-glow">Six defined steps from file review to production-ready approval in India.</p>
+          </div>
+          <div class="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+            <div class="p-6 border-l-4 border-blue-400 bg-black bg-opacity-30 backdrop-blur-sm">
+              <h4 class="text-lg font-bold text-white ems-text-glow">01. File Review & DFM Check</h4>
+              <p class="text-gray-300 text-sm mt-2 ems-text-glow">Detailed analysis on your Gerbers and BOM to identify risks.</p>
+            </div>
+            <div class="p-6 border-l-4 border-blue-400 bg-black bg-opacity-30 backdrop-blur-sm">
+              <h4 class="text-lg font-bold text-white ems-text-glow">02. Quote & Plan Confirmation</h4>
+              <p class="text-gray-300 text-sm mt-2 ems-text-glow">Transparent pricing and estimated timeline from our local facility.</p>
+            </div>
+            <div class="p-6 border-l-4 border-blue-400 bg-black bg-opacity-30 backdrop-blur-sm">
+              <h4 class="text-lg font-bold text-white ems-text-glow">03. Component Sourcing</h4>
+              <p class="text-gray-300 text-sm mt-2 ems-text-glow">Sourcing components from trusted suppliers and kitting materials.</p>
+            </div>
+            <div class="p-6 border-l-4 border-blue-400 bg-black bg-opacity-30 backdrop-blur-sm">
+              <h4 class="text-lg font-bold text-white ems-text-glow">04. First Article Build</h4>
+              <p class="text-gray-300 text-sm mt-2 ems-text-glow">Our SMT lines assemble your first article sample to exact specs.</p>
+            </div>
+            <div class="p-6 border-l-4 border-blue-400 bg-black bg-opacity-30 backdrop-blur-sm">
+              <h4 class="text-lg font-bold text-white ems-text-glow">05. Test & Quality Validation</h4>
+              <p class="text-gray-300 text-sm mt-2 ems-text-glow">Comprehensive functional testing, AOI, and X-ray inspection.</p>
+            </div>
+            <div class="p-6 border-l-4 border-blue-400 bg-black bg-opacity-30 backdrop-blur-sm">
+              <h4 class="text-lg font-bold text-white ems-text-glow">06. Production Release</h4>
+              <p class="text-gray-300 text-sm mt-2 ems-text-glow">Ramping up production with strict quality controls.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. Supply Models Section -->
+      <section class="relative py-20 bg-[url('gifs/ems-supply.gif')] bg-cover bg-center bg-fixed">
+        <div class="absolute inset-0 bg-black bg-opacity-80"></div>
+        <div class="relative z-10 container mx-auto px-4">
+          <div class="text-center mb-16">
+            <p class="text-blue-400 font-bold tracking-widest uppercase ems-text-glow">Supply Models</p>
+            <h3 class="text-3xl md:text-4xl font-bold text-white mt-2 ems-text-glow">Turnkey, consignment, or partial</h3>
+            <p class="text-gray-300 mt-4 max-w-2xl mx-auto ems-text-glow">The supply model determines who sources your components and how pricing is structured.</p>
+          </div>
+          <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div class="p-8 border border-gray-700 rounded-lg bg-gray-900 bg-opacity-50 backdrop-blur-sm text-center">
+              <h4 class="text-2xl font-bold text-white mb-4 ems-text-glow">Turnkey Manufacturing</h4>
+              <p class="text-gray-300 mb-4 ems-text-glow">You provide files. We source everything in India and globally, build everything, and deliver finished boards.</p>
+              <div class="text-sm text-blue-300 font-mono ems-text-glow">Pricing: Assembly + Components + Sourcing Fee</div>
+            </div>
+            <div class="p-8 border border-gray-700 rounded-lg bg-gray-900 bg-opacity-50 backdrop-blur-sm text-center">
+              <h4 class="text-2xl font-bold text-white mb-4 ems-text-glow">Partial Consignment</h4>
+              <p class="text-gray-300 mb-4 ems-text-glow">You supply specific custom ICs. We source the standard passives and manage the build locally.</p>
+              <div class="text-sm text-blue-300 font-mono ems-text-glow">Pricing: Assembly + Partial Sourcing Fee</div>
+            </div>
+            <div class="p-8 border border-gray-700 rounded-lg bg-gray-900 bg-opacity-50 backdrop-blur-sm text-center">
+              <h4 class="text-2xl font-bold text-white mb-4 ems-text-glow">Full Consignment</h4>
+              <p class="text-gray-300 mb-4 ems-text-glow">You supply all components. We provide state-of-the-art assembly, testing, and inspection.</p>
+              <div class="text-sm text-blue-300 font-mono ems-text-glow">Pricing: Assembly Only</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. EMS Dedicated RFQ Form -->
+      <section class="py-20 bg-black border-t border-gray-800">
+        <div class="container mx-auto px-4 max-w-4xl">
+          <div class="bg-gray-900 border border-gray-700 rounded-xl p-8 shadow-2xl">
+            <h3 class="text-3xl font-bold text-white mb-2">Request an EMS Manufacturing Quote</h3>
+            <p class="text-gray-400 mb-8">Upload your details and let our Hyderabad team review your project requirements.</p>
+            <form onsubmit="submitEMSForm(event)" class="space-y-6">
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <label class="block text-sm font-semibold text-gray-300 mb-1">Full Name</label>
+                  <input type="text" class="w-full p-3 bg-gray-800 border border-gray-600 rounded-lg text-white focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none" required>
+                </div>
+                <div>
+                  <label class="block text-sm font-semibold text-gray-300 mb-1">Company Name</label>
+                  <input type="text" class="w-full p-3 bg-gray-800 border border-gray-600 rounded-lg text-white focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none" required>
+                </div>
+              </div>
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <label class="block text-sm font-semibold text-gray-300 mb-1">Email Address</label>
+                  <input type="email" class="w-full p-3 bg-gray-800 border border-gray-600 rounded-lg text-white focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none" required>
+                </div>
+                <div>
+                  <label class="block text-sm font-semibold text-gray-300 mb-1">Service Type</label>
+                  <select class="w-full p-3 bg-gray-800 border border-gray-600 rounded-lg text-white focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none" required>
+                    <option value="">Select Service...</option>
+                    <option value="PCBA Turnkey">PCBA (Turnkey)</option>
+                    <option value="PCBA Consignment">PCBA (Consignment)</option>
+                    <option value="Box Build">Box Build & Integration</option>
+                    <option value="Cable Harness">Cable & Wire Harness</option>
+                  </select>
+                </div>
+              </div>
+              <div>
+                <label class="block text-sm font-semibold text-gray-300 mb-1">Project Details & Volume</label>
+                <textarea rows="4" placeholder="Briefly describe your project, estimated quantities, and timelines..." class="w-full p-3 bg-gray-800 border border-gray-600 rounded-lg text-white focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none" required></textarea>
+              </div>
+              <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-lg transition-colors shadow-lg text-lg">Submit EMS Enquiry</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+    
+  </main>
+  
+  <!-- Global RFQ / Enquiry Modal -->
+  <div id="rfq-modal" class="fixed inset-0 bg-black bg-opacity-70 hidden z-[100] flex items-center justify-center p-4 backdrop-blur-sm transition-opacity">
+    <div class="bg-white rounded-xl shadow-2xl max-w-lg w-full p-8 relative">
+      <button onclick="closeRFQModal()" class="absolute top-4 right-4 text-gray-500 hover:text-red-500 transition-colors">
+        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+      </button>
+      
+      <h3 class="text-2xl font-bold text-blue-900 mb-1">Request a Quote / Enquiry</h3>
+      <p class="text-xs text-gray-500 mb-6 font-semibold">SanShina Electronic Products and Services Pvt. Ltd.</p>
+      
+      <form id="rfq-form" class="space-y-4">
+        <div>
+          <label class="block text-sm font-semibold text-gray-700">Full Name</label>
+          <input type="text" class="w-full mt-1 p-2 border border-gray-300 rounded focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none" required>
+        </div>
+        <div>
+          <label class="block text-sm font-semibold text-gray-700">Email Address</label>
+          <input type="email" class="w-full mt-1 p-2 border border-gray-300 rounded focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none" required>
+        </div>
+        
+        <!-- Dynamic Cart Items UI -->
+        <div id="rfq-cart-container" class="hidden">
+          <label class="block text-sm font-semibold text-gray-700 mb-2">Requested Parts</label>
+          <div id="rfq-cart-list" class="space-y-2 max-h-40 overflow-y-auto bg-gray-50 p-3 rounded border border-gray-200">
+            <!-- Items populated by JS -->
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-sm font-semibold text-gray-700">Additional Message / Requirements</label>
+          <textarea rows="3" id="rfq-msg" placeholder="Please provide any other details or service requirements..." class="w-full mt-1 p-2 border border-gray-300 rounded focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none"></textarea>
+        </div>
+        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded transition-colors mt-2 shadow-lg">Submit Enquiry</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Floating Global Contact/RFQ Button (Left side to avoid Tawk.to) -->
+  <button onclick="openRFQModal()" class="fixed bottom-6 left-6 z-50 bg-orange-600 hover:bg-orange-700 text-white rounded-full shadow-2xl px-6 py-4 flex items-center justify-center transition-transform hover:scale-105 group border-2 border-white">
+    <svg class="w-6 h-6 mr-2 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+    <span class="font-bold tracking-wide">Contact / RFQ</span>
+    <span id="rfq-badge" class="absolute -top-2 -right-2 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full hidden shadow">0</span>
+  </button>
+
+  <footer class="bg-gray-900 text-gray-400 py-8 text-center border-t border-gray-800">
+    <div class="container mx-auto px-4">
+      <p>&copy; 2026 SanShina Electronic Products and Services Pvt. Ltd. All rights reserved.</p>
+      <p class="text-sm mt-2">Hyderabad, India | GeM Registered | ISO 9001:2015 Certified</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/6af2bdcbca05703c46738478/1k723aph1';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
+</body>
+</html>
