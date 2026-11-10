@@ -1,0 +1,29 @@
+Category,Filename,Title,Description
+Client,drdo,DRDO Labs,
+Client,isro,ISRO Contractors,
+Client,bel,Bharat Electronics (BEL),
+Client,hal,Hindustan Aeronautics (HAL),
+Client,bhel,BHEL Hyderabad,
+Client,Tcs,Premier Tech Giants,
+Authorization,ISO,ISO 9001:2015,Quality Management System
+Authorization,ECIA,ECIA Member,Electronic Components Industry Assn.
+Authorization,IPC,IPC-A-610 Compliant,Acceptability of Electronic Assemblies
+Authorization,GeM,GeM & CPPP Registered,Public Procurement Approved Vendor
+Manufacturer,TE Connectivity,TE Connectivity,
+Manufacturer,TT Electronics,TT Electronics,
+Manufacturer,Murata Electronics,Murata Electronics,
+Manufacturer,Infineon Technologies,Infineon Technologies,
+Manufacturer,Onsemi,Onsemi,
+Manufacturer,NXP Semiconductors,NXP Semiconductors,
+Manufacturer,Rochester Electronics,Rochester Electronics,
+Manufacturer,Renesas,Renesas,
+Manufacturer,AMD Xilinx,AMD Xilinx,
+Manufacturer,KYOCERA AVX,KYOCERA AVX,
+Manufacturer,Amphenol,Amphenol,
+Manufacturer,Panasonic,Panasonic,
+Manufacturer,YAGEO,YAGEO,
+Manufacturer,Intel,Intel,
+Manufacturer,Texas Instruments,Texas Instruments,
+Manufacturer,Molex,Molex,
+Manufacturer,TDK Corporation,TDK Corporation,
+Manufacturer,D Components,D Components,

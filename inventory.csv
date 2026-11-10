@@ -1,0 +1,25 @@
+Category,Part Number,Manufacturer,Description,Stock Status
+Integrated Circuits (ICs),STM32F407VGT6,STMicroelectronics,"ARM Cortex-M4 MCU, 1MB Flash, 100-LQFP",In Stock
+Integrated Circuits (ICs),ADC3683IRSBT,Texas Instruments,16-bit 65 MSPS Analog-to-Digital Converter,In Stock
+Integrated Circuits (ICs),XCVU3P-2FFVC1517I,AMD / Xilinx,"Virtex UltraScale+ FPGA, 1517-BFBGA",Available on Order
+Integrated Circuits (ICs),ATMEGA328P-AU,Microchip,"8-bit AVR Microcontroller, 32K Flash, TQFP-32",In Stock
+Integrated Circuits (ICs),STSPIN32F0A,STMicroelectronics,Integrated motor driver and MCU single chip,In Stock
+Capacitors,SR151A3R3CARTR1,KYOCERA AVX,3.3pF Ceramic Disc Capacitor 100V COG,In Stock
+Capacitors,RC0603FR-0710KL,YAGEO,10K Ohm 1% 1/10W Chip Resistor 0603,In Stock
+Capacitors,GRM188R71H104KA93D,Murata,0.1uF 50V X7R 0603 Ceramic Capacitor,In Stock (10k+)
+Connectors & Interconnects,53398-0471,Molex,"PicoBlade Header, Surface Mount, Right Angle, 4 Circuits",In Stock
+Connectors & Interconnects,3-641202-4,TE Connectivity,010P MTA156 CONN ASSY 22AWG RED,In Stock
+Connectors & Interconnects,TS-110-G-2,Samtec,"Standard Through-Hole Terminal Strip, 2.54mm Pitch",In Stock
+Board-Mount Power Supplies,VOF-85-12,CUI Inc,85W 12V 7.1A Open Frame AC-DC Power Supply,In Stock
+Board-Mount Power Supplies,IRM-05-5,Mean Well,5W 5V 1A Miniature Encapsulated Power Supply Module,In Stock
+Audio Components,ICS-43434,TDK InvenSense,I2S digital output MEMS microphone,In Stock
+Audio Components,AK7755EN,Asahi Kasei,24-bit DSP with 2-ch ADC and 4-ch DAC,Available
+Battery Products,MS621FE,Seiko Instruments,3V Rechargeable Lithium Coin Cell Battery,In Stock
+Battery Products,CR1220,Panasonic,3V Lithium Coin Battery,In Stock
+Circuit Protection Devices,046701.5NR,Littelfuse,1.5A 63V Surface Mount Fast-Acting Fuse,In Stock
+Discrete Semiconductor Devices,STL7DN6LF3,STMicroelectronics,N-Channel 30V 7A Power MOSFET,In Stock
+Electromechanical Switches,G6RN-1-DC24,Omron,"Power PCB Relay, SPDT, 24VDC Coil, 8A",In Stock
+Electronic Filters,LFCN-3000+,Mini-Circuits,Low Pass Filter DC to 3000 MHz,In Stock
+Inductors, Coils, Chokes,VLF302515MT-1R5N,TDK Corporation,1.5uH Power Inductor SMD,In Stock
+Memory Cards & Modules,W25Q64FVSSIG,Winbond,64M-bit SpiFlash Memory IC,In Stock
+Motors & Drivers,STSPIN32F0A,STMicroelectronics,Advanced brushless DC motor controller,In Stock
