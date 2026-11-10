@@ -7,6 +7,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://web3forms.com/client/script.js" async defer></script>
 </head>
 <body class="bg-gray-50 text-gray-800">
   <!-- Header & Navigation -->
@@ -98,14 +99,16 @@
       <h3 class="text-2xl font-bold text-blue-900 mb-1">Request a Quote / Enquiry</h3>
       <p class="text-xs text-gray-500 mb-6 font-semibold">SanShina Electronic Products and Services Pvt. Ltd.</p>
       
-      <form id="rfq-form" class="space-y-4">
+      <form class="rfq-form space-y-4" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="758eeb67-5f93-4f53-8471-20a47d3e27db">
+        <input type="hidden" name="subject" value="Global RFQ / Enquiry Submission">
         <div>
           <label class="block text-sm font-semibold text-gray-700">Full Name</label>
-          <input type="text" class="w-full mt-1 p-2 border border-gray-300 rounded focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none" required>
+          <input type="text" name="name" class="w-full mt-1 p-2 border border-gray-300 rounded focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none" required>
         </div>
         <div>
           <label class="block text-sm font-semibold text-gray-700">Email Address</label>
-          <input type="email" class="w-full mt-1 p-2 border border-gray-300 rounded focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none" required>
+          <input type="email" name="email" class="w-full mt-1 p-2 border border-gray-300 rounded focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none" required>
         </div>
         
         <!-- Dynamic Cart Items UI -->
@@ -118,8 +121,10 @@
 
         <div>
           <label class="block text-sm font-semibold text-gray-700">Additional Message / Requirements</label>
-          <textarea rows="3" id="rfq-msg" placeholder="Please provide any other details or service requirements..." class="w-full mt-1 p-2 border border-gray-300 rounded focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none"></textarea>
+          <textarea rows="3" name="message" id="rfq-msg" placeholder="Please provide any other details or service requirements..." class="w-full mt-1 p-2 border border-gray-300 rounded focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none"></textarea>
         </div>
+        
+        <div class="h-captcha" data-captcha="true"></div>
         <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded transition-colors mt-2 shadow-lg">Submit Enquiry</button>
       </form>
     </div>
