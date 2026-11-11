@@ -27,116 +27,388 @@
         <a href="ems.html" class="px-3 py-2 rounded bg-blue-800 text-sm font-semibold whitespace-nowrap transition-colors">EMS Solutions</a>
         <a href="techlabs.html" class="px-3 py-2 rounded hover:bg-blue-800 text-sm font-semibold whitespace-nowrap transition-colors">Technical Labs</a>
         <a href="about.html" class="px-3 py-2 rounded hover:bg-blue-800 text-sm font-semibold whitespace-nowrap transition-colors">About Us</a>
-        
-        <!-- Global RFQ Button -->
         <button onclick="openRFQModal()" class="ml-2 px-4 py-2 rounded bg-orange-600 hover:bg-orange-500 text-white text-sm font-bold whitespace-nowrap transition-colors shadow-md">Submit RFQ</button>
       </nav>
     </div>
   </header>
   
   <main>
-    
     <div class="bg-black text-white">
-      <!-- Hero / Problem Section ... -->
-      <section class="relative py-24 bg-[url('gifs/ems-problem.gif')] bg-cover bg-center bg-fixed border-b border-gray-800">
+      
+      <!-- Hero Section (GIF 1) -->
+      <section class="relative py-24 bg-[url('gifs/ems-hero.gif')] bg-cover bg-center bg-fixed border-b border-gray-800">
         <div class="absolute inset-0 bg-black bg-opacity-70"></div>
         <div class="relative z-10 max-w-4xl mx-auto px-4 text-center">
-          <h2 class="text-4xl md:text-5xl font-bold mb-6 ems-text-glow text-blue-400">Building a hardware product is hard enough without the manufacturing puzzle</h2>
+          <h2 class="text-4xl md:text-5xl font-bold mb-6 ems-text-glow text-blue-400">India: Electronics Manufacturing for Startups and Growing Hardware Brands</h2>
           <p class="text-xl ems-text-glow text-gray-200 mb-8">
-            You designed it. Now you need it built reliably, at scale, and locally. Operating entirely out of Hyderabad, India, our NPI and production lines bridge the gap between your CAD files and a physical, tested product ready for the market.
+            SMT assembly, PCBA, functional testing, and box-build from our Hyderabad facility — prototype quantities to production runs, with NPI support built in.
           </p>
         </div>
       </section>
 
-      <!-- Capabilities Section ... -->
-      <section class="relative py-20 bg-[url('gifs/ems-capabilities.gif')] bg-cover bg-center bg-fixed border-b border-gray-800">
-        <div class="absolute inset-0 bg-gray-900 bg-opacity-80"></div>
-        <div class="relative z-10 container mx-auto px-4">
+      <!-- Who We Manufacture For Section (Solid) -->
+      <section class="relative py-20 bg-gray-900 border-b border-gray-800">
+        <div class="container mx-auto px-4">
           <div class="text-center mb-16">
-            <h3 class="text-3xl md:text-4xl font-bold text-white ems-text-glow">What our production line can build</h3>
-            <p class="text-gray-300 mt-4 max-w-2xl mx-auto ems-text-glow">From rapid prototyping to mass production, our Hyderabad facility handles complex assemblies.</p>
+            <p class="text-blue-400 font-bold tracking-widest uppercase ems-text-glow">Who We Manufacture For</p>
+            <h3 class="text-3xl md:text-4xl font-bold text-white mt-2 ems-text-glow">Built for startups and growing brands — not just large OEMs</h3>
+            <p class="text-gray-300 mt-4 max-w-2xl mx-auto ems-text-glow">Whether you're building your first batch of 50 units or scaling to monthly runs of 5,000 — we structure our process around your volume, your timeline, and your quality requirements.</p>
           </div>
-          <div class="grid md:grid-cols-3 gap-8">
-            <div class="p-8 border border-gray-600 rounded-lg bg-black bg-opacity-40 backdrop-blur-sm">
-              <h4 class="text-xl font-bold text-blue-400 mb-4 ems-text-glow">PCBA (SMT & THT)</h4>
-              <p class="text-gray-200 ems-text-glow">High-precision Surface Mount and Through-Hole assembly. Handling passives down to 0201, BGA, and fine-pitch components with automated optical inspection.</p>
+          <div class="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            <div class="p-8 border border-gray-700 rounded-lg bg-black bg-opacity-50 text-left">
+              <h4 class="text-blue-400 font-bold text-sm tracking-widest uppercase mb-1">Hardware Startup</h4>
+              <h5 class="text-xl font-bold text-white mb-2">You have a validated prototype and need your first real build</h5>
+              <p class="text-gray-400 text-sm italic mb-4">First CM engagement · Prototype to pilot run</p>
+              <div class="mb-4">
+                <p class="text-gray-300 text-sm font-semibold mb-1">Typical Situation:</p>
+                <p class="text-gray-400 text-sm">Your breadboard or assembled prototype works. You've validated the concept and you're ready to move beyond hand-built units. You need a CM who will take a small first order seriously and help you build a process for scale.</p>
+              </div>
+              <div class="mb-4">
+                <p class="text-gray-300 text-sm font-semibold mb-1">What They Bring:</p>
+                <ul class="list-disc list-inside text-gray-400 text-sm space-y-1">
+                  <li>Gerber files and BOM</li>
+                  <li>A working prototype for reference</li>
+                  <li>Target quantity of 50-500 units</li>
+                  <li>Launch date or investor timeline</li>
+                </ul>
+              </div>
+              <div>
+                <p class="text-gray-300 text-sm font-semibold mb-1">What They Need From Us:</p>
+                <ul class="list-disc list-inside text-gray-400 text-sm space-y-1">
+                  <li>DFM review before first build</li>
+                  <li>Turnkey component sourcing</li>
+                  <li>Small-batch SMT assembly</li>
+                  <li>Functional testing</li>
+                </ul>
+              </div>
             </div>
-            <div class="p-8 border border-gray-600 rounded-lg bg-black bg-opacity-40 backdrop-blur-sm">
-              <h4 class="text-xl font-bold text-blue-400 mb-4 ems-text-glow">Box Build & Integration</h4>
-              <p class="text-gray-200 ems-text-glow">Complete mechanical assembly, integrating PCBs into enclosures, routing cables, and applying custom firmware prior to final packaging.</p>
+            
+            <div class="p-8 border border-gray-700 rounded-lg bg-black bg-opacity-50 text-left">
+              <h4 class="text-blue-400 font-bold text-sm tracking-widest uppercase mb-1">Product Brand</h4>
+              <h5 class="text-xl font-bold text-white mb-2">You have a proven product and need a reliable production partner</h5>
+              <p class="text-gray-400 text-sm italic mb-4">Ongoing production · Supplier evaluation</p>
+              <div class="mb-4">
+                <p class="text-gray-300 text-sm font-semibold mb-1">Typical Situation:</p>
+                <p class="text-gray-400 text-sm">Your product is selling. Your current manufacturer has quality issues, or can't scale with you. Or you're bringing manufacturing in-house after using a distributor. You need predictable production.</p>
+              </div>
+              <div class="mb-4">
+                <p class="text-gray-300 text-sm font-semibold mb-1">What They Bring:</p>
+                <ul class="list-disc list-inside text-gray-400 text-sm space-y-1">
+                  <li>Complete, approved design files</li>
+                  <li>Established BOM with preferred suppliers</li>
+                  <li>Existing test protocol/spec</li>
+                  <li>Quality history data</li>
+                </ul>
+              </div>
+              <div>
+                <p class="text-gray-300 text-sm font-semibold mb-1">What They Need From Us:</p>
+                <ul class="list-disc list-inside text-gray-400 text-sm space-y-1">
+                  <li>Consistent quality across runs</li>
+                  <li>Competitive pricing at their tier</li>
+                  <li>Proactive communication</li>
+                  <li>Smooth supplier transition</li>
+                </ul>
+              </div>
             </div>
-            <div class="p-8 border border-gray-600 rounded-lg bg-black bg-opacity-40 backdrop-blur-sm">
-              <h4 class="text-xl font-bold text-blue-400 mb-4 ems-text-glow">Cable & Wire Harness</h4>
-              <p class="text-gray-200 ems-text-glow">Custom cable assemblies, overmolding, and wire harnesses designed to withstand harsh industrial environments.</p>
+
+            <div class="p-8 border border-gray-700 rounded-lg bg-black bg-opacity-50 text-left">
+              <h4 class="text-blue-400 font-bold text-sm tracking-widest uppercase mb-1">OEM / Product Manager</h4>
+              <h5 class="text-xl font-bold text-white mb-2">You have complete engineering specs and need precise execution</h5>
+              <p class="text-gray-400 text-sm italic mb-4">Technical procurement · Spec-driven</p>
+              <div class="mb-4">
+                <p class="text-gray-300 text-sm font-semibold mb-1">Typical Situation:</p>
+                <p class="text-gray-400 text-sm">You have a complete engineering package and you need a CM that executes to spec without improvising. Your job is on the line if quality fails or timelines slip.</p>
+              </div>
+              <div class="mb-4">
+                <p class="text-gray-300 text-sm font-semibold mb-1">What They Bring:</p>
+                <ul class="list-disc list-inside text-gray-400 text-sm space-y-1">
+                  <li>Complete Gerber and assembly files</li>
+                  <li>Approved BOM with AVL</li>
+                  <li>Written quality specification (IPC class)</li>
+                  <li>Target pricing from current supplier</li>
+                </ul>
+              </div>
+              <div>
+                <p class="text-gray-300 text-sm font-semibold mb-1">What They Need From Us:</p>
+                <ul class="list-disc list-inside text-gray-400 text-sm space-y-1">
+                  <li>Exact compliance with spec</li>
+                  <li>Sourcing from AVL only</li>
+                  <li>IPC-A-610 Class 2 or 3 inspection</li>
+                  <li>On-time delivery to agreed schedule</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- NPI Process Section ... -->
+      <!-- Full Capabilities Section (GIF 2) -->
+      <section class="relative py-20 bg-[url('gifs/ems-capabilities.gif')] bg-cover bg-center bg-fixed border-b border-gray-800">
+        <div class="absolute inset-0 bg-gray-900 bg-opacity-90"></div>
+        <div class="relative z-10 container mx-auto px-4">
+          <div class="text-center mb-16">
+            <p class="text-blue-300 font-bold tracking-widest uppercase ems-text-glow">Capabilities</p>
+            <h3 class="text-3xl md:text-4xl font-bold text-white mt-2 ems-text-glow">What our production line can build</h3>
+            <p class="text-gray-300 mt-4 max-w-2xl mx-auto ems-text-glow">Six core manufacturing capabilities — from bare PCB procurement through to fully assembled, tested, and packaged products.</p>
+          </div>
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <div class="p-6 border border-gray-700 rounded-lg bg-black bg-opacity-60 backdrop-blur-sm">
+              <h4 class="text-xl font-bold text-blue-400 mb-2">PCB Manufacturing</h4>
+              <p class="text-gray-400 text-sm mb-3">High-quality bare PCBs with fast lead times and multiple options.</p>
+              <ul class="list-disc list-inside text-gray-300 text-sm space-y-1">
+                <li>Substrate: FR4, metal, polyimide, etc.</li>
+                <li>Layer count: 1-20 layers</li>
+                <li>Min. line/space: 3/3 mil (75/75 µm)</li>
+                <li>Surface finish: HASL, ENIG, OSP</li>
+              </ul>
+            </div>
+            <div class="p-6 border border-gray-700 rounded-lg bg-black bg-opacity-60 backdrop-blur-sm">
+              <h4 class="text-xl font-bold text-blue-400 mb-2">SMT Assembly</h4>
+              <p class="text-gray-400 text-sm mb-3">Precision SMT assembly for a wide range of components.</p>
+              <ul class="list-disc list-inside text-gray-300 text-sm space-y-1">
+                <li>Component size: 0201 metric and above</li>
+                <li>BGA pitch: 0.35mm and above</li>
+                <li>Placement accuracy: ±25 μm (3σ)</li>
+                <li>Dimensions: 50×50mm ~ 460×510mm</li>
+              </ul>
+            </div>
+            <div class="p-6 border border-gray-700 rounded-lg bg-black bg-opacity-60 backdrop-blur-sm">
+              <h4 class="text-xl font-bold text-blue-400 mb-2">THT Assembly</h4>
+              <p class="text-gray-400 text-sm mb-3">Reliable through-hole assembly with wave or selective soldering.</p>
+              <ul class="list-disc list-inside text-gray-300 text-sm space-y-1">
+                <li>Hole size: 0.6mm and above</li>
+                <li>Component lead: Axial, radial, connectors</li>
+                <li>Wave solder: Dual wave with N2 protection</li>
+                <li>Hand soldering: For odd-form, heat-sensitive</li>
+              </ul>
+            </div>
+            <div class="p-6 border border-gray-700 rounded-lg bg-black bg-opacity-60 backdrop-blur-sm">
+              <h4 class="text-xl font-bold text-blue-400 mb-2">Testing & Inspection</h4>
+              <p class="text-gray-400 text-sm mb-3">Comprehensive testing to ensure quality and reliability.</p>
+              <ul class="list-disc list-inside text-gray-300 text-sm space-y-1">
+                <li>100% AOI inspection</li>
+                <li>X-ray inspection for BGA, QFN, voiding</li>
+                <li>ICT, functional test, and boundary scan</li>
+                <li>Burn-in testing for duration</li>
+              </ul>
+            </div>
+            <div class="p-6 border border-gray-700 rounded-lg bg-black bg-opacity-60 backdrop-blur-sm">
+              <h4 class="text-xl font-bold text-blue-400 mb-2">Final Assembly</h4>
+              <p class="text-gray-400 text-sm mb-3">Product assembly, integration, and system level build.</p>
+              <ul class="list-disc list-inside text-gray-300 text-sm space-y-1">
+                <li>Box build and system integration</li>
+                <li>Cable assembly and harness</li>
+                <li>Conformal coating, potting, labeling</li>
+                <li>Enclosure integration (Plastic/Metal)</li>
+              </ul>
+            </div>
+            <div class="p-6 border border-gray-700 rounded-lg bg-black bg-opacity-60 backdrop-blur-sm">
+              <h4 class="text-xl font-bold text-blue-400 mb-2">Packaging & Fulfillment</h4>
+              <p class="text-gray-400 text-sm mb-3">Secure packaging, kitting, and global shipment support.</p>
+              <ul class="list-disc list-inside text-gray-300 text-sm space-y-1">
+                <li>ESD-safe packaging and protection</li>
+                <li>Kitting, labeling, user manuals</li>
+                <li>Global shipping with tracked logistics</li>
+                <li>Amazon prep (FNSKU, poly bag, carton)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- NPI Process Section (GIF 3) -->
       <section class="relative py-20 bg-[url('gifs/ems-process.gif')] bg-cover bg-center bg-fixed border-b border-gray-800">
-        <div class="absolute inset-0 bg-blue-900 bg-opacity-80"></div>
+        <div class="absolute inset-0 bg-blue-900 bg-opacity-90"></div>
         <div class="relative z-10 container mx-auto px-4">
           <div class="text-center mb-16">
             <p class="text-blue-300 font-bold tracking-widest uppercase ems-text-glow">Our NPI Process</p>
             <h3 class="text-3xl md:text-4xl font-bold text-white mt-2 ems-text-glow">How we turn your design files into a manufactured product</h3>
-            <p class="text-gray-200 mt-4 max-w-2xl mx-auto ems-text-glow">Six defined steps from file review to production-ready approval in India.</p>
+            <p class="text-gray-200 mt-4 max-w-2xl mx-auto ems-text-glow">Six defined steps from file review to production-ready approval — with a quality gate and client checkpoint at every stage. Nothing moves forward without your sign-off.</p>
           </div>
-          <div class="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-            <div class="p-6 border-l-4 border-blue-400 bg-black bg-opacity-30 backdrop-blur-sm">
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <div class="p-6 border-l-4 border-blue-400 bg-black bg-opacity-50 backdrop-blur-sm">
               <h4 class="text-lg font-bold text-white ems-text-glow">01. File Review & DFM Check</h4>
-              <p class="text-gray-300 text-sm mt-2 ems-text-glow">Detailed analysis on your Gerbers and BOM to identify risks.</p>
+              <p class="text-gray-300 text-sm mt-2 mb-2 ems-text-glow">We review your files in detail. Our team performs DFM analysis on your Gerbers and BOM to identify risks.</p>
+              <p class="text-blue-300 text-xs font-bold uppercase mt-2">Deliverables:</p>
+              <ul class="text-gray-400 text-xs list-disc list-inside"><li>DFM report & issue list</li></ul>
             </div>
-            <div class="p-6 border-l-4 border-blue-400 bg-black bg-opacity-30 backdrop-blur-sm">
+            <div class="p-6 border-l-4 border-blue-400 bg-black bg-opacity-50 backdrop-blur-sm">
               <h4 class="text-lg font-bold text-white ems-text-glow">02. Quote & Plan Confirmation</h4>
-              <p class="text-gray-300 text-sm mt-2 ems-text-glow">Transparent pricing and estimated timeline from our local facility.</p>
+              <p class="text-gray-300 text-sm mt-2 mb-2 ems-text-glow">We provide a clear quote & build plan. You receive transparent pricing and estimated timeline.</p>
+              <p class="text-blue-300 text-xs font-bold uppercase mt-2">Deliverables:</p>
+              <ul class="text-gray-400 text-xs list-disc list-inside"><li>Detailed quotation & build plan</li></ul>
             </div>
-            <div class="p-6 border-l-4 border-blue-400 bg-black bg-opacity-30 backdrop-blur-sm">
+            <div class="p-6 border-l-4 border-blue-400 bg-black bg-opacity-50 backdrop-blur-sm">
               <h4 class="text-lg font-bold text-white ems-text-glow">03. Component Sourcing</h4>
-              <p class="text-gray-300 text-sm mt-2 ems-text-glow">Sourcing components from trusted suppliers and kitting materials.</p>
+              <p class="text-gray-300 text-sm mt-2 mb-2 ems-text-glow">We source components from trusted suppliers and prepare kitted materials with full traceability.</p>
+              <p class="text-blue-300 text-xs font-bold uppercase mt-2">Deliverables:</p>
+              <ul class="text-gray-400 text-xs list-disc list-inside"><li>Kitting list & material readiness</li></ul>
             </div>
-            <div class="p-6 border-l-4 border-blue-400 bg-black bg-opacity-30 backdrop-blur-sm">
+            <div class="p-6 border-l-4 border-blue-400 bg-black bg-opacity-50 backdrop-blur-sm">
               <h4 class="text-lg font-bold text-white ems-text-glow">04. First Article Build</h4>
-              <p class="text-gray-300 text-sm mt-2 ems-text-glow">Our SMT lines assemble your first article sample to exact specs.</p>
+              <p class="text-gray-300 text-sm mt-2 mb-2 ems-text-glow">Our SMT and THT lines assemble the first article build exactly to your specifications.</p>
+              <p class="text-blue-300 text-xs font-bold uppercase mt-2">Deliverables:</p>
+              <ul class="text-gray-400 text-xs list-disc list-inside"><li>First article build (FAI) & records</li></ul>
             </div>
-            <div class="p-6 border-l-4 border-blue-400 bg-black bg-opacity-30 backdrop-blur-sm">
+            <div class="p-6 border-l-4 border-blue-400 bg-black bg-opacity-50 backdrop-blur-sm">
               <h4 class="text-lg font-bold text-white ems-text-glow">05. Test & Quality Validation</h4>
-              <p class="text-gray-300 text-sm mt-2 ems-text-glow">Comprehensive functional testing, AOI, and X-ray inspection.</p>
+              <p class="text-gray-300 text-sm mt-2 mb-2 ems-text-glow">Comprehensive testing and inspection ensure the build meets all function and reliability requirements.</p>
+              <p class="text-blue-300 text-xs font-bold uppercase mt-2">Deliverables:</p>
+              <ul class="text-gray-400 text-xs list-disc list-inside"><li>Functional test, AOI & X-ray reports</li></ul>
             </div>
-            <div class="p-6 border-l-4 border-blue-400 bg-black bg-opacity-30 backdrop-blur-sm">
+            <div class="p-6 border-l-4 border-blue-400 bg-black bg-opacity-50 backdrop-blur-sm">
               <h4 class="text-lg font-bold text-white ems-text-glow">06. Production Release</h4>
-              <p class="text-gray-300 text-sm mt-2 ems-text-glow">Ramping up production with strict quality controls.</p>
+              <p class="text-gray-300 text-sm mt-2 mb-2 ems-text-glow">Upon approval, we ramp up production with the same quality controls and communication.</p>
+              <p class="text-blue-300 text-xs font-bold uppercase mt-2">Deliverables:</p>
+              <ul class="text-gray-400 text-xs list-disc list-inside"><li>Production units & final test report</li></ul>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Supply Models Section ... -->
-      <section class="relative py-20 bg-[url('gifs/ems-supply.gif')] bg-cover bg-center bg-fixed">
+      <!-- Supply Models Section (GIF 4) -->
+      <section class="relative py-20 bg-[url('gifs/ems-supply.gif')] bg-cover bg-center bg-fixed border-b border-gray-800">
         <div class="absolute inset-0 bg-black bg-opacity-80"></div>
         <div class="relative z-10 container mx-auto px-4">
           <div class="text-center mb-16">
             <p class="text-blue-400 font-bold tracking-widest uppercase ems-text-glow">Supply Models</p>
             <h3 class="text-3xl md:text-4xl font-bold text-white mt-2 ems-text-glow">Turnkey, consignment, or partial</h3>
-            <p class="text-gray-300 mt-4 max-w-2xl mx-auto ems-text-glow">The supply model determines who sources your components and how pricing is structured.</p>
+            <p class="text-gray-300 mt-4 max-w-2xl mx-auto ems-text-glow">The supply model determines who sources your components and how pricing is structured. Understanding the difference helps you choose the right approach for your project.</p>
           </div>
-          <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <div class="p-8 border border-gray-700 rounded-lg bg-gray-900 bg-opacity-50 backdrop-blur-sm text-center">
-              <h4 class="text-2xl font-bold text-white mb-4 ems-text-glow">Turnkey Manufacturing</h4>
-              <p class="text-gray-300 mb-4 ems-text-glow">You provide files. We source everything in India and globally, build everything, and deliver finished boards.</p>
-              <div class="text-sm text-blue-300 font-mono ems-text-glow">Pricing: Assembly + Components + Sourcing Fee</div>
+          <div class="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            <div class="p-8 border border-gray-700 rounded-lg bg-gray-900 bg-opacity-60 backdrop-blur-sm text-left">
+              <h4 class="text-2xl font-bold text-white mb-2 ems-text-glow">Turnkey Manufacturing</h4>
+              <p class="text-gray-400 text-sm mb-4 italic">You provide files. We source everything, build everything, and deliver finished boards.</p>
+              <div class="text-sm text-blue-300 font-mono ems-text-glow mb-4 border-b border-gray-700 pb-4">Pricing: Assembly + Components + Sourcing Fee</div>
+              <p class="text-gray-300 text-sm mb-2"><span class="font-bold">Best For:</span> Hardware startups and founders without existing supply chain relationships. Products where Indian market sourcing delivers the best combination of price and availability.</p>
+              <p class="text-gray-400 text-sm">You receive a line-by-line BOM cost breakdown before we order anything. No hidden margins.</p>
             </div>
-            <div class="p-8 border border-gray-700 rounded-lg bg-gray-900 bg-opacity-50 backdrop-blur-sm text-center">
-              <h4 class="text-2xl font-bold text-white mb-4 ems-text-glow">Partial Consignment</h4>
-              <p class="text-gray-300 mb-4 ems-text-glow">You supply specific custom ICs. We source the standard passives and manage the build locally.</p>
-              <div class="text-sm text-blue-300 font-mono ems-text-glow">Pricing: Assembly + Partial Sourcing Fee</div>
+            <div class="p-8 border border-gray-700 rounded-lg bg-gray-900 bg-opacity-60 backdrop-blur-sm text-left">
+              <h4 class="text-2xl font-bold text-white mb-2 ems-text-glow">Partial Consignment</h4>
+              <p class="text-gray-400 text-sm mb-4 italic">You supply specific components. We source everything else and manage the complete build.</p>
+              <div class="text-sm text-blue-300 font-mono ems-text-glow mb-4 border-b border-gray-700 pb-4">Pricing: Assembly + Partial Sourcing Fee</div>
+              <p class="text-gray-300 text-sm mb-2"><span class="font-bold">Best For:</span> Established brands with existing supplier relationships for key components (proprietary parts, specific qualified components).</p>
+              <p class="text-gray-400 text-sm">We source all standard passive components, connectors, and ICs from India and globally. Your supplied components are not marked up.</p>
             </div>
-            <div class="p-8 border border-gray-700 rounded-lg bg-gray-900 bg-opacity-50 backdrop-blur-sm text-center">
-              <h4 class="text-2xl font-bold text-white mb-4 ems-text-glow">Full Consignment</h4>
-              <p class="text-gray-300 mb-4 ems-text-glow">You supply all components. We provide state-of-the-art assembly, testing, and inspection.</p>
-              <div class="text-sm text-blue-300 font-mono ems-text-glow">Pricing: Assembly Only</div>
+            <div class="p-8 border border-gray-700 rounded-lg bg-gray-900 bg-opacity-60 backdrop-blur-sm text-left">
+              <h4 class="text-2xl font-bold text-white mb-2 ems-text-glow">Full Consignment</h4>
+              <p class="text-gray-400 text-sm mb-4 italic">You supply all components. We provide assembly, test, and inspection only.</p>
+              <div class="text-sm text-blue-300 font-mono ems-text-glow mb-4 border-b border-gray-700 pb-4">Pricing: Assembly Only</div>
+              <p class="text-gray-300 text-sm mb-2"><span class="font-bold">Best For:</span> Established OEMs with mature supply chains and strict AVL requirements where all components must come from specific qualified suppliers.</p>
+              <p class="text-gray-400 text-sm">Ship kitted components to our Hyderabad facility — we assemble, test, and ship finished boards back to your distribution center.</p>
             </div>
           </div>
+        </div>
+      </section>
+
+      <!-- Quality and Compliance Section (Solid) -->
+      <section class="relative py-20 bg-gray-900 border-b border-gray-800">
+        <div class="container mx-auto px-4 max-w-6xl">
+          <div class="text-center mb-16">
+            <p class="text-blue-400 font-bold tracking-widest uppercase ems-text-glow">Quality & Compliance</p>
+            <h3 class="text-3xl md:text-4xl font-bold text-white mt-2 ems-text-glow">Built to IPC standards with full production traceability</h3>
+            <p class="text-gray-300 mt-4 max-w-2xl mx-auto ems-text-glow">Every build runs through a defined quality system — inspection at every stage, documented results per unit, and compliance with the standards your product needs to reach market.</p>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-8 mb-12">
+            <div class="p-6 border border-gray-600 rounded-lg bg-black">
+              <h4 class="text-xl font-bold text-blue-400 mb-2">IPC-A-610 Class 2</h4>
+              <p class="text-gray-300 text-sm">Globally recognized standard for the acceptability of electronic assemblies. Defines acceptance criteria for solder joints, component placement, cleanliness, and cosmetic condition.</p>
+            </div>
+            <div class="p-6 border border-gray-600 rounded-lg bg-black">
+              <h4 class="text-xl font-bold text-blue-400 mb-2">IPC J-STD-001</h4>
+              <p class="text-gray-300 text-sm">Defines requirements for soldering electrical and electronic assemblies. Processes are qualified to Class 2, with Class 3 available for high-reliability builds.</p>
+            </div>
+            <div class="p-6 border border-gray-600 rounded-lg bg-black">
+              <h4 class="text-xl font-bold text-blue-400 mb-2">IPC-6012 Class 2</h4>
+              <p class="text-gray-300 text-sm">Covers qualification and performance specification for rigid PCBs. We verify incoming quality before any boards enter assembly — incoming inspection is not optional.</p>
+            </div>
+            <div class="p-6 border border-gray-600 rounded-lg bg-black">
+              <h4 class="text-xl font-bold text-blue-400 mb-2">IPC-7711/7721</h4>
+              <p class="text-gray-300 text-sm">Rework and repair is performed to standard. All rework is documented with reason, method, and technician responsible. Reworked units are retested and documented.</p>
+            </div>
+          </div>
+
+          <div class="grid md:grid-cols-4 gap-4 text-center">
+            <div class="p-4 border border-gray-700 rounded-lg bg-black">
+              <h4 class="font-bold text-white mb-1">RoHS Compliant</h4>
+              <p class="text-xs text-gray-400">Compliant with 2.0 & 3.0</p>
+            </div>
+            <div class="p-4 border border-gray-700 rounded-lg bg-black">
+              <h4 class="font-bold text-white mb-1">ISO 9001:2015</h4>
+              <p class="text-xs text-gray-400">Quality Management</p>
+            </div>
+            <div class="p-4 border border-gray-700 rounded-lg bg-black">
+              <h4 class="font-bold text-white mb-1">ESD Protected</h4>
+              <p class="text-xs text-gray-400">EPA-compliant control</p>
+            </div>
+            <div class="p-4 border border-gray-700 rounded-lg bg-black">
+              <h4 class="font-bold text-white mb-1">REACH Compliant</h4>
+              <p class="text-xs text-gray-400">(EC) No. 1907/2006</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Volumes & Minimums Section (Solid) -->
+      <section class="relative py-20 bg-black border-b border-gray-800">
+        <div class="container mx-auto px-4 max-w-5xl">
+          <div class="text-center mb-16">
+            <p class="text-blue-400 font-bold tracking-widest uppercase ems-text-glow">Realistic Numbers</p>
+            <h3 class="text-3xl md:text-4xl font-bold text-white mt-2 ems-text-glow">Minimum quantities and lead times</h3>
+            <p class="text-gray-300 mt-4 max-w-2xl mx-auto ems-text-glow">Pricing structure across three production stages — so you know what to expect before you reach out.</p>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-6">
+            <div class="p-6 border border-gray-700 rounded-lg bg-gray-900">
+              <h4 class="text-2xl font-bold text-white mb-2">Prototype Build</h4>
+              <p class="text-blue-400 font-bold mb-4">First article & functional</p>
+              <ul class="text-gray-300 text-sm space-y-2 mb-4">
+                <li><span class="font-semibold text-white">Qty:</span> 10-50 units</li>
+                <li><span class="font-semibold text-white">Lead Time:</span> 2-4 weeks</li>
+                <li><span class="font-semibold text-white">Best for:</span> Validation, demos</li>
+              </ul>
+              <p class="text-gray-400 text-xs italic">For initial validation, turnkey or consignment, engineering support included.</p>
+            </div>
+            
+            <div class="p-6 border border-blue-500 rounded-lg bg-blue-900 bg-opacity-20 shadow-[0_0_15px_rgba(59,130,246,0.3)] transform md:-translate-y-4">
+              <h4 class="text-2xl font-bold text-white mb-2">Pilot Run</h4>
+              <p class="text-blue-400 font-bold mb-4">Small-batch & market testing</p>
+              <ul class="text-gray-300 text-sm space-y-2 mb-4">
+                <li><span class="font-semibold text-white">Qty:</span> 100-500 units</li>
+                <li><span class="font-semibold text-white">Lead Time:</span> 4-6 weeks</li>
+                <li><span class="font-semibold text-white">Best for:</span> Early sales, pilot</li>
+              </ul>
+              <p class="text-gray-400 text-xs italic">Bridge from prototype to full production, process optimization, cost-effective.</p>
+            </div>
+
+            <div class="p-6 border border-gray-700 rounded-lg bg-gray-900">
+              <h4 class="text-2xl font-bold text-white mb-2">Production Run</h4>
+              <p class="text-blue-400 font-bold mb-4">Volume production at scale</p>
+              <ul class="text-gray-300 text-sm space-y-2 mb-4">
+                <li><span class="font-semibold text-white">Qty:</span> 1,000+ units</li>
+                <li><span class="font-semibold text-white">Lead Time:</span> 6-8 weeks</li>
+                <li><span class="font-semibold text-white">Best for:</span> Ongoing supply</li>
+              </ul>
+              <p class="text-gray-400 text-xs italic">Stable demand and repeat orders, best pricing at scale, long-term supply reliability.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Us Section (Solid) -->
+      <section class="relative py-20 bg-gray-900">
+        <div class="container mx-auto px-4 max-w-4xl text-center">
+          <p class="text-blue-400 font-bold tracking-widest uppercase ems-text-glow mb-2">Why SanShina</p>
+          <h3 class="text-3xl md:text-4xl font-bold text-white mb-6">NPI-first mindset — not a volume CM tolerating small orders</h3>
+          <p class="text-gray-300 text-lg mb-8 leading-relaxed">
+            Most contract manufacturers make their money on repeat orders of stable products at high volume. NPI builds — first articles, small batches, design changes mid-run — are disruptions to their process. They tolerate them because they hope to win the volume business. We've structured our entire operation around the opposite priority: new products that have never been manufactured before, for teams who've never done this before.
+          </p>
+          <div class="bg-black border border-gray-700 p-8 rounded-lg text-left italic text-gray-400 border-l-4 border-l-blue-500">
+            "We had a DFM report in two days and a first article in three weeks. That's the whole point — they actually want to build your product."
+          </div>
+          <p class="text-white mt-8 font-semibold">Single English-speaking point of contact — throughout.</p>
+          <p class="text-gray-400 text-sm mt-2">Free first consultation · NDA before any file sharing · Response within 24 hours</p>
         </div>
       </section>
 
@@ -186,7 +458,6 @@
         </div>
       </section>
     </div>
-    
   </main>
   
   <!-- Global RFQ / Enquiry Modal -->
@@ -230,7 +501,7 @@
     </div>
   </div>
 
-  <!-- Floating Global Contact/RFQ Button (Left side to avoid Tawk.to) -->
+  <!-- Floating Global Contact/RFQ Button -->
   <button onclick="openRFQModal()" class="fixed bottom-6 left-6 z-50 bg-orange-600 hover:bg-orange-700 text-white rounded-full shadow-2xl px-6 py-4 flex items-center justify-center transition-transform hover:scale-105 group border-2 border-white">
     <svg class="w-6 h-6 mr-2 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
     <span class="font-bold tracking-wide">Contact / RFQ</span>
